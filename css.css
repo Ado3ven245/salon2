@@ -246,10 +246,6 @@ h1 span {
     font-size: 1rem;
     text-decoration: none;
 }
-.card-btn:hover{
-color: var(--text-color);
-background-color: var(--bg-light);
-}
 
 
 
@@ -432,7 +428,7 @@ background-color: var(--bg-light);
     .slide p {
         /* Маленький и аккуратный текст */
         font-size: 0.9rem; 
-        max-width: 250px;
+        /* max-width: 250px; */
         margin: 0 auto;
         line-height: 1.4;
     }
