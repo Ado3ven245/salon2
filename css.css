@@ -562,36 +562,22 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* --- Планшеты и Десктоп --- */
 /* Эти стили сработают ТОЛЬКО на мобильных */
 @media (max-width: 767px) {
      .spann{
     font-size: 2.4rem;
 }
+    .stats-mini span{
+        font-size: 0.9rem;
+       
+    }
+
     .subtitle{
         font-size: 1rem;
     }
     .hero{
-        padding-left: 20px;
+        padding-left: 20px;                                     
     }
     .slider {
         display: flex;
@@ -611,6 +597,7 @@ h1 {
     }
     .container{
     max-width:700px;
+    margin-bottom: 30px;
     }
     .section-card {
         padding: 20px; 
