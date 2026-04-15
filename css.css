@@ -392,7 +392,7 @@ h1 {
   display: block;
   color: var(--text-white);
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
@@ -598,12 +598,46 @@ h1 {
     .slider::-webkit-scrollbar {
         display: none;
     }
-.box{
-    width: 130px;
-    
-    
+    .container{
+    max-width:700px;
+    }
+    .section-card {
+        padding: 20px; 
+    }
+    body{
+        font-size: 15px;
+    }  
+    .card {
+        flex-direction: column; 
+        margin-bottom: 50px;     
+        text-align: center;       
+    }
+        h1 { font-size: 3rem; }
+        .grid-stats { grid-template-columns: 1fr; }
+
    
-}
+        .info-p{
+          padding: 10px 15px;
+          font-size: 1.5rem;
+        }
+    .card-img {
+        margin-left: 0;          
+        margin-top: 30px;        
+        width: 100%;            
+        height: auto;            
+        max-width: 450px;        
+    }
+
+    .card-btn {
+        display: inline-block;          
+        margin: 10px auto;       
+        width: 100%;             
+        max-width: 280px;     
+      
+    }
+    .img-placeholder{
+        height: 150px;
+    }
     .slide {
         height: 500px;
         flex: 0 0 100%;
@@ -671,47 +705,5 @@ h1 {
     font-size: 0.9rem;
     
  }
-@media (max-width: 768px) {
-    h1 { font-size: 3rem; }
-    .grid-stats { grid-template-columns: 1fr; }
 
-   
-    .info-p{
-          padding: 10px 15px;
-          font-size: 1.5rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .section-card {
-        padding: 20px; 
-    }
-    body{
-        font-size: 15px;
-    }  
-    .card {
-        flex-direction: column; 
-        margin-bottom: 50px;     
-        text-align: center;       
-    }
-
-    .card-img {
-        margin-left: 0;          
-        margin-top: 30px;        
-        width: 100%;            
-        height: auto;            
-        max-width: 450px;        
-    }
-
-    .card-btn {
-        display: inline-block;          
-        margin: 10px auto;       
-        width: 100%;             
-        max-width: 280px;     
-      
-    }
-    .img-placeholder{
-        height: 150px;
-    }
-}
 
