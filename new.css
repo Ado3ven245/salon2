@@ -225,7 +225,7 @@ h1 {
 
 .slider::-webkit-scrollbar { display: none; }
 
-.slide {
+.slide, .aw {
     flex: 0 0 100%;
     min-height: 400px;
     scroll-snap-align: start;
@@ -233,16 +233,16 @@ h1 {
     align-items: center;
     justify-content: center;
     padding: 40px;
-    color: white;
+    color: var(--bg-light);
     gap: 30px;
 }
 
-.slide p {
+.slide p, .aw p {
     font-size: clamp(1.1rem, 3vw, 1.8rem);
     max-width: 400px;
 }
 
-.slide img {
+.slide img, .aw img {
     height: 350px;
     width: auto;
     border-radius: 20px;
@@ -252,7 +252,9 @@ h1 {
 .slide:nth-child(even) {
     color: var(--text-color);
 }
-
+.aw:nth-child(odd) {
+    color: var(--text-color);
+}
 /* --- STATS GRID --- */
 .stats {
     padding: 60px 0;
@@ -362,7 +364,7 @@ h1 {
 }
 
 .card > div:first-child {
-    padding: 40px;
+    padding-bottom: 40px;
     flex: 0.5;
 }
 
@@ -469,13 +471,13 @@ h1 {
         justify-content: center;
     }
 
-    .slide {
+    .slide, .aw{
         flex-direction: column-reverse;
         text-align: center;
         padding: 30px 20px;
     }
 
-    .slide img {
+    .slide img, .aw img {
         height: 250px;
     }
 
