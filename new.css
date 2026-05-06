@@ -1,14 +1,16 @@
 :root {
-    --primary-color: #63184a;
+    --primary-color: #6B508E;
     --text-color: #2b2b2b;
     --bg-light: #fdfcf9;
-    --pink-color: #FACEFF;
-    --bg-dark-red: #63184a;
+    --pink-color: #CF92E5;
+    --bg-dark-red: #4a2870;
     --text-white: #ffffff;
     --text-gray: rgba(255, 255, 255, 0.7);
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Inter', sans-serif;
     --transition: 0.3s ease;
+    /* --opa: #7D5CA6; */
+    
 }
 
 * {
@@ -59,7 +61,8 @@ body {
     align-items: center;
 }
 
-.logo {
+.logo  img{
+    height: 100px;
     font-size: 1.8rem;
     font-family: var(--font-heading);
     font-weight: bold;
@@ -316,7 +319,8 @@ h1 {
 
 .Pbtn {
     padding: 12px 25px;
-    background-color: var(--pink-color);
+    background-color: var(--primary-color);
+    color: var(--bg-light);
     border: 1px solid var(--text-color);
     border-radius: 4px;
     cursor: pointer;
@@ -386,7 +390,7 @@ h1 {
 
 /* --- FOOTER & CONTACTS --- */
 .contacts-section {
-    background-color: var(--bg-dark-red);
+    background-color: var(--primary-color);
     color: var(--text-white);
     padding: 60px 0;
 }
@@ -407,6 +411,7 @@ h1 {
 }
 
 .footer-grid {
+    padding-top: 50px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 40px;
@@ -446,7 +451,26 @@ h1 {
 }
 
 .legal-bar a { color: inherit; text-decoration: none; }
+ 
 
+ul{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+ul li{
+    font-size: 1.17rem;
+    font-weight: bold;
+    list-style: none;
+}
+.map-placeholder img{
+    width: 100%;
+    
+}
+ .map-container{
+       background-image: url(img/map.png);
+       background-size: cover;
+    }
 /* --- МЕДИА-ЗАПРОСЫ --- */
 @media (max-width: 992px) {
     .card {
@@ -491,6 +515,7 @@ h1 {
 
     .footer-grid {
         text-align: center;
+
     }
 
     .legal-bar {
@@ -507,6 +532,8 @@ h1 {
     .card-div{
         padding-right: 0;
     }
+   
+
 }
 
 @media (max-width: 480px) {
