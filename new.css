@@ -43,7 +43,20 @@ body {
     from { opacity: 0; transform: translateY(10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+@keyframes fonAni {
+    from{opacity: 0; transform: translate(-50%, -50%);}
+    to{opacity: 1; transform: translate(-50%, -90%);}
 
+}
+@keyframes fon {
+    0%{transform:translateY(0) ;}
+    100%{transform: translateY(100%); opacity: 0; }
+   
+   
+}
+@keyframes Anifon {
+    100%{opacity: 0;}
+}
 .contaiani {
     animation: Ani 1s ease-in forwards;
 }
@@ -395,7 +408,8 @@ h1 {
     padding: 60px 0;
 }
 .section-slide{
-    margin-bottom: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
 }
 .section-title {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
@@ -467,6 +481,30 @@ ul li{
     width: 100%;
     height: 100%;
 }
+.logoFon{
+    z-index: 2;
+    position: absolute;
+    width: 90vw;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: fonAni 2s 2 alternate forwards ;
+}
+/* .logoFon{
+    animation: Anifon 2s ease-in both ;
+    animation-delay: 3s;
+} */
+
+.fon{
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    z-index: 1;
+    animation: fon 2s ease both;
+    animation-delay: 3s;
+   
+}
 
  
 /* --- МЕДИА-ЗАПРОСЫ --- */
@@ -530,8 +568,7 @@ ul li{
     .card-div{
         padding-right: 0;
     }
-   
-
+  
 }
 
 @media (max-width: 480px) {
