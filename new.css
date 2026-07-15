@@ -48,12 +48,20 @@ body {
     to{opacity: 1; transform: translate(-50%, -90%);}
 
 }
-@keyframes fon {
-    0%{transform:translateY(0) ;}
-    100%{transform: translateY(100%); opacity: 0; }
+/* @keyframes fon {
+    0%{
+        /* transform:translateY(0);*/
+         /* z-index: 1;} */
+    /* 100%{ */
+        /* transform: translateY(100%);*/
+         /* opacity: 0; z-index: -2;} */
+    
    
-   
-}
+/* } */
+ @keyframes fon {
+    from{display:block}
+    to{display: none;}
+ }
 @keyframes Anifon {
     100%{opacity: 0;}
 }
@@ -383,15 +391,14 @@ h1 {
 
 .card > div:first-child {
     padding-bottom: 40px;
-    padding-left: 200px;
+    padding-left: 100px;
     flex: 0.5;
 }
 
 .card h1 { font-size: clamp(2rem, 4vw, 3rem); }
 
 .card-img {
-    width: 50%;
-    height: 400px;
+    width: 600px;
     border-radius: 8%;
     /* object-fit: cover; */
 }
@@ -501,11 +508,14 @@ ul li{
     width: 100vw;
     position: absolute;
     z-index: 1;
-    animation: fon 2s ease both;
+    animation: fon 1s ease both;
     animation-delay: 3s;
    
 }
-
+.politikhtml{
+    background-color: var(--primary-color);
+    color: white;
+}
  
 /* --- МЕДИА-ЗАПРОСЫ --- */
 @media (max-width: 992px) {
