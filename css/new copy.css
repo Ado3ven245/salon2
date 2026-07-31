@@ -44,8 +44,8 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 @keyframes fonAni {
-    from{opacity: 0; transform: translate(-50%, -50%);display: block;}
-    to{opacity: 1; transform: translate(-50%, -90%); display: none; visibility: hidden;}
+    from{opacity: 0; transform: translate(-50%, -50%);}
+    to{opacity: 1; transform: translate(-50%, -90%);}
 
 }
 /* @keyframes fon {
@@ -62,7 +62,9 @@ body {
     from{display:block}
     to{display: none;}
  }
-
+@keyframes Anifon {
+    100%{opacity: 0;}
+}
 .contaiani {
     animation: Ani 1s ease-in forwards;
 }
@@ -261,8 +263,7 @@ h1 {
 
 .slide p, .aw p {
     font-size: clamp(1.1rem, 3vw, 1.8rem);
-    max-width: 800px;
-    padding-right: 30px;
+    max-width: 400px;
 }
 
 .slide img, .aw img {
@@ -333,31 +334,28 @@ h1 {
 .PriceBtn {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
     gap: 10px;
     margin-bottom: 30px;
-
-
 }
 
 .Pbtn {
     padding: 12px 25px;
-    color: var(--primary-color);
-    font-family: var(--font-heading);
+    background-color: var(--primary-color);
+    color: var(--bg-light);
+    border: 1px solid var(--text-color);
     border-radius: 4px;
     cursor: pointer;
-    font-size: 3rem;
-   
+    font-size: 0.9rem;
+    text-transform: uppercase;
 }
 
 .price-table {
     border-top: 1px solid #ddd;
-    margin: 20px 150px;
 }
 
 .price-header, .price-row {
     display: grid;
-    grid-template-columns: 3fr 1fr ;
+    grid-template-columns: 2fr 1fr 1fr;
     padding: 15px 0;
     border-bottom: 1px solid #eee;
     gap: 10px;
@@ -498,7 +496,6 @@ ul li{
     left: 50%;
     transform: translate(-50%, -50%);
     animation: fonAni 2s 2 alternate forwards ;
-    transition-behavior: allow-discrete;
 }
 /* .logoFon{
     animation: Anifon 2s ease-in both ;
@@ -516,23 +513,26 @@ ul li{
    
 }
 .politikhtml{
-    padding: 50px 40px;
+    padding-top: 50px;
     background-color: var(--primary-color);
     color: white;
     text-align: center;
     font-size: clamp(1.1rem, 3vw, 1.8rem);
     line-height:3rem;
-    max-width: 900px;
-    margin: 40px auto;
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    color: #ffffff;
-    line-height: 1.6;
+   
 }
  .politikhtml div{
     padding-left: 180px;
     
  }
-
+ .politikhtml {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    color: #1e293b;
+    line-height: 1.6;
+}
 
 /* Баннер-заголовок */
 .politikhtml .header-banner {
@@ -646,18 +646,14 @@ a{
     }
 
     .slide img, .aw img {
-        width: 100vw;
-        height: 100%;
+        height: 250px;
     }
 
     .price-header, .price-row {
-        
-        font-size: 1.5rem;
-        gap: 151px
+        grid-template-columns: 1fr 1fr 1fr;
+        font-size: 0.8rem;
     }
-    .price-table{
-        margin: 20px 80px;
-    }
+
     .footer-grid {
         text-align: center;
 
@@ -677,12 +673,7 @@ a{
     .card-div{
         padding-right: 0;
     }
-  .aw p, .slide p{
-        display: none;
-    }
-    .aw , .slide{
-        padding: 5px;
-    }
+  
 }
 
 @media (max-width: 480px) {
@@ -692,5 +683,4 @@ a{
     .stat-val {
         font-size: 2.2rem;
     }
-    
 }
