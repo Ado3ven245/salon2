@@ -623,7 +623,44 @@ ul li{
 a{
     color: inherit;
     text-decoration: none   ;
+
 }
+.price-flex{
+    display: flex;
+    justify-content: center;
+   
+}
+.price-flex p {
+    padding-right: 50px;
+    padding-top: 20px;
+    border-bottom: 1px solid #eee;
+}
+.section-criceflex h1 {
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
     .header .container {
         flex-direction: column;
@@ -677,11 +714,19 @@ a{
     .card-div{
         padding-right: 0;
     }
-  .aw p, .slide p{
+    .aw p, .slide p{
         display: none;
     }
     .aw , .slide{
         padding: 5px;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-div{
+        order: 1;
+        margin-top: 50px;
     }
 }
 
