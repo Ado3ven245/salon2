@@ -106,10 +106,20 @@ masivs.forEach(masiv => {
 
 // }
 //================================
-const display = window.getComputedStyle(fon).display;
+// const display = window.getComputedStyle(fon).display;
 
 
-if (display ==='display'){
-  document.body.style.overflowY = 'none';
+// if (display ==='block'){
+//   document.body.style.overflowY = 'hidden';
 
-}
+// }
+// if (display ==='none'){
+//   document.body.style.overflowY = 'auto';
+// }
+setTimeout(() => {
+  const  fon = document.querySelector('.fon')
+  const body = document.querySelector(".body")
+    body.style.overflowY = 'auto'
+    console.log("eteghipiehpgn")
+  
+}, 3700)
