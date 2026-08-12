@@ -9,7 +9,7 @@
 //   }
 
 // }, 3000);
-
+const body = document.querySelector(".body")
 const slider = document.querySelector('.slider');
 
 // Функция автопрокрутки
@@ -105,3 +105,11 @@ masivs.forEach(masiv => {
   // }
 
 // }
+//================================
+const display = window.getComputedStyle(fon).display;
+
+
+if (display ==='display'){
+  document.body.style.overflowY = 'none';
+
+}

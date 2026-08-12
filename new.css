@@ -30,6 +30,7 @@ body {
     background-color: var(--bg-light);
     line-height: 1.6;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .container {
@@ -81,7 +82,7 @@ body {
 }
 
 .logo  img{
-    height: 100px;
+    height: 5rem;
     font-size: 1.8rem;
     font-family: var(--font-heading);
     font-weight: bold;
@@ -522,8 +523,8 @@ ul li{
     text-align: center;
     font-size: clamp(1.1rem, 3vw, 1.8rem);
     line-height:3rem;
-    max-width: 900px;
-    margin: 40px auto;
+   
+    margin: 0px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     color: #ffffff;
     line-height: 1.6;
@@ -718,7 +719,7 @@ a{
         display: none;
     }
     .aw , .slide{
-        padding: 5px;
+        padding: 0px;
     }
     .card{
         display: flex;
@@ -728,6 +729,12 @@ a{
         order: 1;
         margin-top: 50px;
     }
+    .politikhtml div {
+        padding: 0;
+}
+.price-list{
+    display: none;
+}
 }
 
 @media (max-width: 480px) {
