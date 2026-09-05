@@ -418,7 +418,7 @@ h1 {
     padding: 60px 0;
 }
 .section-slide{
-    margin-top: 200px;
+    margin-top: 50px;
     margin-bottom: 200px;
 }
 .section-title {
@@ -639,8 +639,14 @@ a{
 .section-criceflex h1 {
     text-align: center;
 }
-
-
+.title{
+    font-size: clamp(2rem, 4vw, 3rem);
+    text-align: center;
+    margin-bottom: 10px;
+}
+.price-flex:first-child{
+    padding-left: 10px;
+}
 
 
 
@@ -681,8 +687,14 @@ a{
         flex-direction: column-reverse;
         text-align: center;
         padding: 30px 20px;
+      
     }
-
+   .slide, .aw{
+      background-color: white !important;
+   }
+   .slid, .section-slide{
+    padding: 40px 10px;
+   }
     .slide img, .aw img {
         width: 100vw;
         height: 100%;
@@ -745,4 +757,9 @@ a{
         font-size: 2.2rem;
     }
     
+}
+@media (min-width: 768px){
+    .section-criceflex{
+        display: none;
+    }
 }
