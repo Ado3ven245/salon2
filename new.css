@@ -647,7 +647,9 @@ a{
 .price-flex:first-child{
     padding-left: 10px;
 }
-
+.menu-price2{
+display: none;
+}
 
 
 
@@ -748,7 +750,12 @@ a{
     display: none;
 }
 }
-
+.menu-price1{
+    display: none;
+}
+ .menu-price2{
+    display: block;
+}
 @media (max-width: 480px) {
     .btn, .Pbtn {
         width: 100%;
@@ -762,4 +769,5 @@ a{
     .section-criceflex{
         display: none;
     }
+   
 }
