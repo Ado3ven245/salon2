@@ -401,8 +401,9 @@ h1 {
 .card h1 { font-size: clamp(2rem, 4vw, 3rem); }
 
 .card-img {
-    width: 600px;
+    width: 370px;
     border-radius: 8%;
+    
     /* object-fit: cover; */
 }
 

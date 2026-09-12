@@ -41,9 +41,9 @@ function startMobileSlider() {
 startMobileSlider();
 // =========================================================================
 const masivs = [ 
-  {link:"index-de.html",img:"imgflag/DE.webp"},
-  {link:"index.html",img:"imgflag/RUS.png"},
-  {link:"index-en.html",img:"imgflag/EU.png"}
+  {link:"/de/index.html",img:"/assets/imgflag/DE.webp"},
+  {link:"/ru/index.html",img:"/assets/imgflag/RUS.png"},
+  {link:"/en/index.html",img:"/assets/imgflag/EU.png"}
 ]
 
 
