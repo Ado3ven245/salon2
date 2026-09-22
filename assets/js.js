@@ -8,7 +8,9 @@
 //     slider.scrollBy({ left: slider.offsetWidth, behavior: 'smooth' });
 //   }
 
+const page = document.body.dataset.page;
 // }, 3000);
+
 const body = document.querySelector(".body")
 const slider = document.querySelector('.slider');
 
@@ -41,9 +43,9 @@ function startMobileSlider() {
 startMobileSlider();
 // =========================================================================
 const masivs = [ 
-  {link:"/de/index.html",img:"/assets/imgflag/DE.webp"},
-  {link:"/ru/index.html",img:"/assets/imgflag/RUS.png"},
-  {link:"/en/index.html",img:"/assets/imgflag/EU.png"}
+  {link:"/de/",img:"/assets/imgflag/DE.webp"},
+  {link:"/ru/",img:"/assets/imgflag/RUS.png"},
+  {link:"/en/",img:"/assets/imgflag/EU.png"}
 ]
 
 
@@ -75,7 +77,8 @@ document.addEventListener("DOMContentLoaded", () => {
 masivs.forEach(masiv => { 
      
         const linkk = document.createElement('a')
-        linkk.setAttribute("href",masiv.link)
+       
+        linkk.setAttribute("href", (masiv.link + page + ".html"))
         const imgg = document.createElement('img')
         // imgg.src=masiv.img;
         // imgg.style.margin="10px"
@@ -116,6 +119,7 @@ masivs.forEach(masiv => {
 // if (display ==='none'){
 //   document.body.style.overflowY = 'auto';
 // }
+// =========== скрол сайта ============
 setTimeout(() => {
   const  fon = document.querySelector('.fon')
   const body = document.querySelector(".body")
