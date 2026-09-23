@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+    
+    <!-- Резервный редирект, если JavaScript отключен в браузере -->
+    <noscript>
+        <meta http-equiv="refresh" content="0; url=/en/">
+    </noscript>
+
+    <script>
+        (function() {
+            // Список поддерживаемых языков и соответствующий им путь
+            var supportedLangs = ['ru', 'en', 'de'];
+            var defaultLang = 'en';
+
+            // Получаем список языков пользователя из браузера
+            var userLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+            var targetLang = defaultLang;
+
+            // Ищем первый совпадающий язык
+            for (var i = 0; i < userLangs.length; i++) {
+                var lang = userLangs[i].toLowerCase().split('-')[0]; // Берем основной код (напр., 'ru' из 'ru-RU')
+                if (supportedLangs.indexOf(lang) !== -1) {
+                    targetLang = lang;
+                    break;
+                }
+            }
+
+            // Выполняем редирект
+            window.location.replace('/' + targetLang + '/'); // /de/index.html --> / de / 
+        })();
+    </script>
+</head>
+  
+<body>
+    <p>If you are not redirected automatically, please choose your language:</p>
+    <ul>
+        <li><a href="/ru/">Русский</a></li>
+        <li><a href="/en/">English</a></li>
+        <li><a href="/de/">Deutsch</a></li>
+    </ul>
+</body>
+  
+</html>

@@ -4,32 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WANT.NAILS | Schönheits- und Transformationssalon</title>
-    <link rel="stylesheet" href="new.css">
+    <link rel="stylesheet" href="/assets/new.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;1,400&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <base href="/de/">  <!-- поменять корневую папку -->
 </head>
-<body>
-    <img class="logoFon" src="img/logo2.jpg" alt="">
+<body class="body" data-page="index">
+   <img class="logoFon" src="../assets/img/logo2.jpg">
     <div class="fon"></div>
 
 
     <header class="header">
+        
         <div class="container">
 
             <ul >
-            <li>Portfolio</li>
-            <li>Preisliste</li>
-            <li>Adresse</li>
+            <li class="mobile-price"><a href="#pl1">Preisliste</a></li>
+            <li class="desktop-price"><a href="#pl2">Preisliste</a></li>
+            <li ><a href="#slid">Portfolio</a></li>
+
+
+
+            <li><a href="#map">Adresse</a></li>
 
             </ul>
 
 
 
 
-            <div class="logo"><img src="img/logo2.jpg" alt=""></div>
+            <div class="logo"><a href="index.html"><img src="../assets/img/logo2.jpg" alt=""></a></div>
             <div class="box">
                 <nav class="nav">
-                                <a class="call" href="http://wa.me/+4915141987470">Kontakt</a>
-                                <div class="idioma">
+                                        <a class="call" href="http://wa.me/+4915141987470">Kontakt</a>
+                                        <div class="idioma">
                     <div class="langs-cnt" id="langs">
                         <div class="langs-cnt-child">
                             <img class="icon" id="toggle-lang-icon" src="https://www.svgrepo.com/show/325328/language.svg" />
@@ -45,56 +51,100 @@
             
                 
                 
+                
         </div> 
        
     </header>
 
     <section class="hero">
         <div class="container">
-            <h1 class="contaiani" ><span class="contaiani">Schönheits-</span>
-                 <span class="spann">und</span> 
-                <span class="contaiani">Transformations-</span>
-                 <span class="spann">salon</span><br>
-            <span class="contaiani">Alles, was du für deinen </span>
-            <span class="spann">perfekten</span>
-             <span class="contaiani">Look brauchst</span></h1>
-            <p class="subtitle" >Maniküre, Pediküre, Augenbrauen und Wimpern, Haarpflege, Kosmetik, Make-up und Styling — alles mit Liebe zum Detail in Tjumen.</p>
+            <h1 class="contaiani" ><span class="contaiani">Nagel</span>
+                 <span class="spann">studio</span>  <br>
+                 <span class="spann">Alles </span>
+            <span class="contaiani"> was du brauchst für <br> deinen </span>
+            <span class="spann">makellosen</span>
+             <span class="contaiani">Look</span></h1>
+            <p class="subtitle" >Maniküre und Pediküre in Wuppertal. <br>
+                Sorgsame Pflege für deine Nägel, mit Liebe zum Detail, gewissenhaft und nur mit sterilisierten Instrumenten.
+            </p>
             <div class="hero-actions">
-                <a href="#section-card" class="btn btn-primary">Termin buchen</a>
+                <a href="#section-card" class="btn btn-primary">Termin vereinbaren</a>
                 <div class="stats-mini">
-                    <img src="img/star.png" width="20" alt="Clients">
-                     <img src="img/star.png" width="20" alt="Clients">
-                      <img src="img/star.png" width="20" alt="Clients">
-                       <img src="img/star.png" width="20" alt="Clients">
-                        <img src="img/star.png" width="20" alt="Clients">
+                    <img src="../assets/img/star.png" width="20" alt="Clients">
+                     <img src="../assets/img/star.png" width="20" alt="Clients">
+                      <img src="../assets/img/star.png" width="20" alt="Clients">
+                       <img src="../assets/img/star.png" width="20" alt="Clients">
+                        <img src="../assets/img/star.png" width="20" alt="Clients">
                     <span >2500+ zufriedene Kunden</span>
                 </div>
             </div>
         </div>
     </section>
+
+
     <section id="slid" class="slid">
-
-
 <div class="slider">
     
 
 
      <div class="slide " style="background-color: var(--primary-color);">
-         <p>Trendige Nuancen und perfekter Glanz. Wir wissen alles über Farben.</p>
-         <img src="img/photo_2026-01-25_13-57-56.jpg" alt="">
+         <p>Perfekt saubere Kante, gleichmäßige Form und absolut glatte Beschichtung.
+             Wir widmen den Details maximale Aufmerksamkeit,
+             damit die Nägel dünn und elegant wirken
+             und gleichzeitig robust bleiben.</p>
+         <img src="../assets/img/1.jpg" alt="">
      </div>
+
      <div class="slide " style="background-color: var(--pink-color);">
-     <p>Selbstbewusstsein bis in die Spitzen. Wir kreieren Formen, die faszinieren.</p>
-         <img src="img/photo_2026-01-25_13-58-00.jpg" alt="">
+     <p>Eine Maniküre, die nicht nur auf Fotos makellos aussieht, 
+         sondern auch im echten Leben — selbst nach mehreren Wochen. 
+         Keine Liftings, Abplatzer oder verlorene Form.</p>
+         <img src="../assets/img/2.jpg" alt="">
      </div>
+
      <div class="slide " style="background-color: var(--primary-color);">
-         <p>Wir arbeiten mit Premium-Materialien. Schonende Pflege für Ihre Hände.</p>
-         <img src="img/photo_2026-01-25_13-58-14.jpg" alt="">
+         <p>Die Beschichtung wird mit juweliergenauer Präzision ganz nah an die Nagelhaut aufgetragen,
+             wobei ein perfekter Spiegelglanz entsteht. Klare Linien, 
+             ein gleichmässiger Kontur und nichts Überflüssiges.</p>
+         <img src="../assets/img/3.jpg" alt="">
      </div>
+
      <div class="slide " style="background-color: var(--pink-color);">
-         <p>Meister mit „goldenen Händen“. Erfahrung, die man in jeder Bewegung sieht.</p>
-         <img src="img/photo_2026-01-25_13-58-09.jpg" alt="">
+         <p>Wir belasten die Nägel nicht mit unnötigen Schichten — nur
+             anatomisch korrekte Architektur und natürliche Eleganz.
+             Die Nägel wirken leicht, ordentlich und sehr edel.</p>
+         <img src="../assets/img/4.jpg" alt="">
      </div>
+
+     <div class="slide " style="background-color: var(--primary-color);">
+         <p>Jedes Detail — von der Hautbearbeitung 
+             bis zum letzten Top-Coat-Strich — ist zur Perfektion gebracht.
+             Keine Verlaufe oder Unebenheiten, nur reine Meisterarbeit.</p>
+         <img src="../assets/img/5.jpg" alt="">
+     </div>
+
+     <div class="slide " style="background-color: var(--pink-color);">
+     <p>Wir wissen, wie man mit schwierigen Nägeln und anspruchsvollen Materialien arbeitet, 
+         damit das Ergebnis jedes Mal mustergültig wird. 
+         Ein frisches, gepflegtes und sauberes Aussehen für lange Zeit.</p>
+         <img src="../assets/img/6.jpg" alt="">
+     </div>
+
+     <div class="slide " style="background-color: var(--primary-color);">
+         <p>Eine hervorragende Wahl für alle, die Kompromisse satt haben 
+             und einen wirklich perfekten Service suchen.
+             Akribische Technik, leichte Beschichtung und perfekte Formgeometrie.</p>
+         <img src="../assets/img/7.jpg" alt="">
+     </div>
+
+     <div class="slide " style="background-color: var(--pink-color);">
+         <p>Dünne Spitzen, perfekt glatte Oberfläche und 
+             absolute Sorgfalt in jedem Detail. 
+             Wir kreieren eine Beschichtung, die deine 
+             Schönheit unterstreicht und problemlos hält.</p>
+         <img src="../assets/img/8.jpg" alt="">
+     </div>
+
      </div>
     
 
@@ -105,7 +155,7 @@
         <div class="container grid-stats">
             <div class="stat-item">
                 <div class="stat-val">8 Jahre</div>
-                <p>Wir kreieren Schönheit für Sie</p>
+                <p>Schaffen Schönheit für dich</p>
             </div>
             <div class="stat-item highlight">
                 <div class="stat-val">+2500</div>
@@ -116,23 +166,23 @@
                 </div>
             <div class="stat-item">
                 <div class="stat-val">87%</div>
-                <p>Wiederkehrquote</p>
+                <p>Wiederkehrende Kunden</p>
             </div>
             <div class="stat-item">
-                <div class="stat-val">+15 000</div>
-                <p>Behandlungen durchgeführt</p>
+                <div class="stat-val">+15.000</div>
+                <p>Durchgeführte Behandlungen</p>
             </div>
 
             
             <div class="stat-item ">
-               <div class="stat-val">+15 000</div>
-                <p>Behandlungen durchgeführt</p>
+               <div class="stat-val">+15.000</div>
+                <p>Durchgeführte Behandlungen</p>
                 </div>
         </div>
     </section>
 
-    <section id="price-list12" class="price-list container">
-        <h2>Preisliste</h2>
+    <section id="pl2" class="price-list container">
+        <h1 class="title">Preisliste</h1>
         <div class="PriceBtn">
             <div class="Pbtn">Maniküre</div>
             <div class="Pbtn">Pediküre</div>
@@ -144,63 +194,90 @@
         </div>
         <div class="price-table">
             <div class="price-header">
-                <span>Dienstleistung</span>
-                <span>Stylist</span>
-                <span>Top-Stylist</span>
+                <span>Leistung</span>
+                <span>Master</span>
+               
             </div>
             <div class="price-row">
-                <span>Maniküre (klassisch)</span>
+                <span>Maniküre (Hygiene)</span>
                 <span>30€</span>
-                <span>1680</span>
+               
             </div>
             <div class="price-row">
-                <span>Maniküre + Gel-Lack (einfarbig)</span>
+                <span>Maniküre + Gelack (einfarbig)</span>
                 <span>45€</span>
-                <span>1680</span>
+                
             </div>
             <div class="price-row">
                 <span>Maniküre + Design</span>
                 <span>50€</span>
-                <span>1680</span>
+                
             </div>
             <div class="price-row">
-                <span>Naturnagelverstärkung</span>
+                <span>Beschichtung mit Verstärkung</span>
                 <span>50€</span>
-                <span>1680</span>
+                
             </div>
             <div class="price-row">
-                <span>Nagelverlängerung</span>
+                <span>Modellage / Nagelverlängerung</span>
                 <span>60€</span>
-                <span>1680</span>
+             
             </div>
             <div class="price-row">
-                <span>Pediküre (klassisch)</span>
+                <span>Pediküre (Hygiene)</span>
                 <span>40€</span>
-                <span>1680</span>
+               
             </div>
              <div class="price-row">
-                <span>Pediküre + Gel-Lack</span>
+                <span>Pediküre + Gelack</span>
                 <span>50€</span>
-                <span>1680</span>
+             
             </div>
         </div>
+    </section>
+    <section class="section-criceflex" id="pl1">
+        
+            <h1>Preisliste</h1>
+            <div class="price-flex">
+                <div>
+                    <p>Maniküre (Hygiene)</p>
+                    <p>Maniküre + Gelack (einfarbig)</p>
+                    <p>Maniküre + Design</p>
+                    <p>Beschichtung mit Verstärkung</p>
+                    <p>Modellage / Nagelverlängerung</p>
+                    <p>Pediküre (Hygiene)</p>
+                    <p>Pediküre + Gelack</p>
+                </div>
+
+
+                <div>
+                    <p>30€</p>
+                    <p>45€</p>
+                    <p>50€</p>
+                    <p>50€</p>
+                    <p>60€</p>
+                    <p>40€</p>
+                    <p>50€</p>
+                </div>
+            </div>
+        
     </section>
 <section id="section-card" class="section-card ">
     <div class="card">
 
             <div class="card-div">
-                <h1>Bereit für deine <br><span>Verwandlung?</span></h1>
-                <p>Buche online, um dir deine Wunschzeit zu sichern,<br>oder stelle eine Frage — <br>wir antworten innerhalb von 30 Minuten.</p>
-                <link  href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<a class="card-btn btn-primary" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/alovenkoartem435'});return false;">Jetzt buchen</a>
+                <h1>Bereit für deine <br><span>Transformation?</span></h1>
+                <p>Buche online, um dir eine <br>passende Zeit zu sichern, oder stelle uns eine Frage — <br>wir antworten innerhalb von 30 Minuten.</p>
+                <!-- Calendly link widget begin -->
 
-                <a href="http://wa.me/+491762020787177" class="card-btn btn-primary " >Frage stellen</a>
+<a class="card-btn btn-primary" href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/alovenkoartem435'});return false;">Termin buchen</a>
+
+                <a href="http://wa.me/+4915141987470" class="card-btn btn-primary " >Frage stellen</a>
             
             
             </div>
             <div>
-                <img  class="card-img" src="img/photo_2026-02-08_11-57-09.jpg" alt="">
+                <img  class="card-img" src="../assets/img/photo_2026-02-08_11-57-09.jpg" alt="">
             </div>
 
                 
@@ -210,27 +287,58 @@
     </div>
 </section>
 
+<h1 class="title">Unser Studio</h1>
 
-    <section class="section-slide">
+    <section class="section-slide" id="section-slide">
      <div class="slider ">
     
 
 
             <div class="aw" style=" background-color: var(--pink-color);">
-                <p>Trendige Nuancen und perfekter Glanz. Wir wissen alles über Farben.</p>
-                <img src="img/photo_2026-01-25_13-57-23.jpg" alt="">
+                <p>Heller, geräumiger Raum mit durchdachter Zoneneinteilung. 
+                    Nichts Überflüssiges — nur ein sauberes Interieur und eine angenehme Atmosphäre.</p>
+                <img src="../assets/img/11.jpg" alt="">
             </div>
+
             <div class="aw" style="background-color: var(--primary-color);">
-                <p>Selbstbewusstsein bis in die Spitzen. Wir kreieren Formen, die faszinieren.</p>
-                <img src="img/photo_2026-01-25_13-57-36.jpg" alt="">
+                <p>Bequeme Sessel, das richtige Licht und moderne, 
+                    integrierte Geräte für ein ruhiges und makellos sauberes Arbeiten.</p>
+                <img src="../assets/img/88.jpg" alt="">
             </div>
+
             <div class=" aw" style="background-color: var(--pink-color);">
-                <p>Wir arbeiten mit Premium-Materialien. Schonende Pflege für Ihre Hände.</p>
-                <img src="img/photo_2026-01-25_13-57-27.jpg" alt="">
-         </div>
+                <p>Weiche, tiefe Sessel mit Verstellfunktion.
+                    Man kann sich ganz entspannt zurücklehnen, ohne dass während der Behandlung etwas einschläft.</p>
+                <img src="../assets/img/33.jpg" alt="">
+           </div>
+
             <div class="aw" style="background-color: var(--primary-color);">
-                <p>Meister mit „goldenen Händen“. Erfahrung, die man in jeder Bewegung sieht.</p>
-                <img src="img/photo_2026-01-25_13-57-51.jpg" alt="">
+                <p>Wir sterilisieren alle Instrumente. Der Kraftpapierbeutel wird erst vor deinen Augen geöffnet.</p>
+                <img src="../assets/img/22.jpg" alt="">
+            </div>
+            
+            <div class="aw" style=" background-color: var(--pink-color);">
+                <p>Hunderte von Gel- und Lacktönen: von Klassikern bis Trends.
+                    Wir verwenden langlebige Materialien ohne Absplitterungen.</p>
+                <img src="../assets/img/88.jpg" alt="">
+            </div>
+
+            <div class="aw" style="background-color: var(--primary-color);">
+                <p>Wir achten auf jede Kleinigkeit — vom praktischen 
+                    Handyständer bis zur durchdachten Beleuchtung aus jedem Blickwinkel.</p>
+                <img src="../assets/img/66.jpg" alt="">
+            </div>
+
+            <div class="aw" style="background-color: var(--pink-color);">
+                <p>Wir achten auf Ordnung, perfekte Sauberkeit und Gerätequalität. 
+                    Wir sorgen dafür, dass es dir in jeder Phase bequem ist.</p>
+                <img src="../assets/img/77.jpg" alt="">
+           </div>
+
+            <div class="aw" style="background-color: var(--primary-color);">
+                <p>Wir halten immer die richtige Wohlfühlbeleuchtung ein 
+                    und sorgen für frische Luft.</p>
+                <img src="../assets/img/44.jpg" alt="">
             </div>
      </div>
     
@@ -238,24 +346,23 @@
 
 
     </section>
-    <section class="contacts-section">
-  <div class="container">
-    <h2 class="section-title">Salon-<span>Kontakte</span> <br>und Anfahrtsbeschreibung</h2>
+    <section class="contacts-section" id="map">
+ <div class="container">
+    <h2 class="section-title">Salon-<span>kontaktdaten</span> <br>und Anfahrt</h2>
     
     <div class="map-container">
         <iframe class="ifraMap" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2969.0862459691452!2d7.1791084471765805!3d51.26154359115516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b8d7d7131a717d%3A0x88cfeee4fc5c01f4!2sMeckelstra%C3%9Fe%2015%2C%2042285%20Wuppertal!5e0!3m2!1sru!2sde!4v1778080460353!5m2!1sru!2sde" 
         style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
+<!-- ==== footer ====== -->
     <footer class="footer-grid">
       <div class="footer-col">
-        <p class="col-title">Menü</p>
         <nav class="footer-nav">
-          <a href="#">Über uns</a>
-          <a href="#">Dienstleistungen</a>
-          <a href="#price-list12">Preise</a>
-          <a href="#slid">Arbeiten</a>
-          <a href="http://wa.me/ +4915141987470">Kontakt</a>
+          
+          <a href="#section-slide">Unser Studio</a>
+          <a href="#price-list12">Preisliste</a>
+          <a href="#slid">Portfolio</a>
+          
         </nav>
       </div>
 
@@ -265,18 +372,22 @@
         <a href="mailto:sopovalana0305@gmail.com" class="email">sopovalana0305@gmail.com</a>
         
         <p class="col-title work-hours-title">Öffnungszeiten</p>
-        <p class="work-hours">Mo–So 10:00–22:00</p>
+        <p class="work-hours">Di–Sa 10:00–22:00 Uhr</p>
       </div>
 
     </footer>
 
     <div class="legal-bar">
-      <span>Want Nails 2026 Alle Rechte vorbehalten</span>
-      <a href="info.html">Impressum / Requisiten</a>
-      <a href="#">Datenschutz / Datenschutzrichtlinie</a>
+      <span>Svitnails 2026 Alle Rechte vorbehalten</span>
+      <a href="info.html">Impressum</a>
+      <a href="about.html">Datenschutz</a>
     </div>
-  </div>
+ </div>
 </section>
-<script src="js.js"></script>
+
+
+<link  href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+<script src="/assets/js.js"></script>
 </body>
 </html>
